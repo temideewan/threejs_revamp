@@ -57,7 +57,7 @@ fontLoader.load("fonts/helvetiker_regular.typeface.json", (font) => {
   const text = new THREE.Mesh(textGeometry, material);
   scene.add(text);
   const donutGeometry = new THREE.TorusGeometry(0.3, 0.2, 20, 45)
-  for(let i = 0; i < 100; i++){
+  for(let i = 0; i < 1000; i++){
     const donut = new THREE.Mesh(donutGeometry, material);
     donut.position.x = (Math.random() - 0.5) * 10;
     donut.position.y = (Math.random() - 0.5) * 10;
